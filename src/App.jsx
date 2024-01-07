@@ -5,6 +5,7 @@ import LayananPage from "./pages/LayananPage";
 import TestimonialPage from "./pages/TestimonialPage";
 import FaqPage from "./pages/FaqPage";
 import SyaratKeten from "./pages/SyaratKeten";
+import FooterComp from "./components/FooterComp";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
         <Route path="/faq" Component={FaqPage} />
         <Route path="/syaratketen" Component={SyaratKeten} />
       </Routes>
+      <FooterComp />
     </>
   );
 };

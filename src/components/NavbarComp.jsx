@@ -26,7 +26,7 @@ const NavbarComp = () => {
   return (
     <>
       <nav
-        className={`flex justify-between items-center w-full fixed md:px-20 md:py-6 p-5 bg-white z-10 ${
+        className={`flex justify-between items-center w-full fixed md:px-24 md:py-6 p-5 bg-white z-10 ${
           scroll ? "shadow-xl" : ""
         }`}
       >
@@ -35,13 +35,13 @@ const NavbarComp = () => {
             Alvan Computer.
           </NavLink>
         </div>
-        <div className="flex gap-10 items-center justify-between">
+        <div className="flex items-center justify-between">
           <div className="hidden lg:block">
             {navLinks.map((link) => (
               <NavLink
                 key={link.id}
                 to={link.path}
-                className="font-medium mr-10"
+                className="font-medium mr-10 hover:text-blue-900"
               >
                 {link.text}
               </NavLink>
